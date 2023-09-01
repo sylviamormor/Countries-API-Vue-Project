@@ -145,7 +145,7 @@ option {
 
 /* Style the selected option */
 select option:checked {
-  background-color: #ae1f1f;
+  background-color: #f5f2f2;
 }
 
 /* Style on focus */
@@ -166,7 +166,7 @@ select:hover {
   gap: 40px;
 }
 .countryCards{
-  border: 1px solid red;
+  
   border-radius: 5px;
   background: #FFF;
 }
@@ -180,7 +180,7 @@ height: 160px;
   align-items: flex-start;
   flex-direction: column;
   gap: 8px;
-  border: 1px solid red;
+ 
 }
 .countryInfo h3{
   color: #111517;
@@ -207,7 +207,7 @@ height: 160px;
 }
 .inputField{
   padding: 19px 200px 19px 32px;
-  border: 1px solid red;
+  
 }
 .inputField img{
   width: 17.5px;
@@ -225,7 +225,7 @@ input{
 select{
   font-size: 14px;
   padding: 19px 77px 19px 24px;
-  border: 1px solid red
+   
 }
 
 }
