@@ -7,11 +7,10 @@ import NavbarComponent from '../components/NavbarComponent.vue';
 
 const router = useRouter();
 const countriesStore = useCountriesStore();
-//countriesStore.getCountriesData();
 
 
 onMounted(() => {
-  countriesStore.fetchCountriesData(); // Fetch countries when the component is mounted
+  countriesStore.fetchCountriesData(); 
 });
 </script>
 
@@ -95,27 +94,11 @@ input{
 textarea:focus, input:focus{
   outline: none;
 }
-/*select{
-  padding: 14px 90px 14px 24px;
-  border: none;
-  color: #111517;
-  font-family: 'Nunito Sans';
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; 
-  border-radius: 5px;
-  background: #FFF;
-  width: 100px;
-}
-option{
-  color: red;
-  
-}*/
+
 select {
-  /* Adjust the width here to reduce the width of the select dropdown */
+  
   width: 150px;
-  /* Customize the appearance of the select dropdown */
+ 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -129,7 +112,7 @@ select {
   background-position: right center;
 }
 
-/* Styles dropdown arrow */
+
 select::-ms-expand {
   display: none;
 }
@@ -143,19 +126,19 @@ option {
   font-weight: 400;
 }
 
-/* Style the selected option */
+
 select option:checked {
   background-color: #f5f2f2;
 }
 
-/* Style on focus */
+
 select:focus {
   outline: none;
   border-color: #1e87f0;
   box-shadow: 0 0 0 2px rgba(30, 135, 240, 0.2);
 }
 
-/* Style on hover */
+
 select:hover {
   border-color: #aaa;
 }
@@ -190,7 +173,7 @@ height: 160px;
   font-weight: 800;
   line-height: 26px; /* 144.444% */
 }
-.country-info p{
+.countryInfo p{
   color: #111517;
   font-family: 'Nunito Sans';
   font-size: 14px;
@@ -228,6 +211,7 @@ select{
    
 }
 
+
 }
 </style>
 
@@ -255,93 +239,3 @@ select{
 
 
 
-<!-- <script setup>
-import {ref, computed} from 'vue';
-import NavbarComponent from '../components/NavbarComponent.vue';
-import {useCountryStore} from '../stores/counter'
-
-const countryStore = useCountryStore()
-
-countryStore.fetchCountry()
-
-</script>
-
-<template>
-<div class="main">
-<NavbarComponent/>
-<div class="inputField">
-  <img src="../assets/searchsearch.png" alt="">
-
-  <input v-model="countriesStore.search" type="text" placeholder="Search for a country…">
-        </div>
-        <div class="region-box">
-        <select v-model="countriesStore.selectedRegion" name="region" id="region">
-          <option value="">Filter by Region</option>
-          <option value="Africa">Africa</option>
-          <option value="America">America</option>
-          <option value="Asia">Asia</option>
-          <option value="Europe">Europe</option>
-          <option value="Oceania">0ceania</option>
-        </select>
-        </div>
-
- <label for="Region"></label>
-<select name= Filter by Region: id="regionNames">
-  <option value="africa">Africa</option>
-  <option value="america">America</option>
-  <option value="asia">Asia</option>
-  <option value="europe">Europe</option>
-</select> -->
-<!-- <div class="countries">
-  <div class="cards" v-for="country in countryStore.countries" :key="recipe.idMeal">
-     <img class="cardImg" :src="recipe.strMealThumb" :alt="recipe.strMeal" /> 
-     <p>{{ recipe.strMeal }}</p>
-</div> 
- </div> 
-<div>
-  <div class="cards">
-        <div class="card" v-for="(country, index) in countryStore.countryData" :key="index">
-            <div class="flag">
-                <img :src="country.flags.png" :alt="country.flags.svg">
-            </div>
-             <div class="flag-details"> 
-                <h3 class="country">{{ country.name.common }}</h3>
-                <div class="c-details">
-                    <p><b>Population:</b> <span>{{ country.population }}</span></p>
-                    <p><b>Region:</b>  <span>{{ country.region }}</span></p>
-                    <p><b>Capital:</b>  <span>{{ country.capital }}</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</template>
-
-<style scoped>
-
-.main{
-  background: #FAFAFA;
-}
-.inputField{
-  width: 343px;
-height: 48px;
-border-radius: 5px;
-background: #FFF;
-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
-padding: 14px 0px 14px 32px;
-margin:24px 16px
-}
-
-.input{
- border: none;
-}
-.cards{
-  width: 264px;
-height: 336px;
-border-radius: 5px;
-background: #FFF;
-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
-padding: 40px 55px 40px 55px;
-}
-</style> -->

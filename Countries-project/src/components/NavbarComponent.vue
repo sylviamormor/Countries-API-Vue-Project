@@ -3,29 +3,33 @@
 </script>
 
 <template>
-  <div class="navbar">
+  
+  
  <div class="nav">
   <p>Where in the world</p>
   <div class="subnav">
     <img src="../assets/Pathmoon.png" alt="">
     <button class="btn"><i class="fas fa-sun-o"></i>Dark mode</button>
-  <p></p>
-</div>
+  </div>
+
  </div>
-</div>
+
 </template>
 
 <style scoped>
 .navbar{
-  max-width: 375px;
+  
+
   
 
 }
 .nav{
   display: flex;
   flex-direction: row;
-  gap: 124px;
+  gap: 4px;
   padding: 30px 15px;
+  justify-content: space-between;
+ 
  
 }
 .nav p{
@@ -68,5 +72,27 @@ font-size: 12px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+}
+
+
+
+
+@media (min-width: 924px) {
+  main{
+        padding: 24px 80px;
+    }
+  .navbar{
+    display: flex;
+    gap: 940px;
+
+  }
+
+  .subnav img{
+    width: 20px;
+    height: 20px;
+  }
+
+
+
 }
 </style>

@@ -1,7 +1,7 @@
 <script setup>
 
 import NavbarComponent from '../components/NavbarComponent.vue';
-import { useRoute } from 'vue-router';
+import { useRoute, RouterLink } from 'vue-router';
 import { useCountriesStore } from '../stores/counter';
 import { onMounted } from 'vue';
 const route = useRoute();
@@ -22,8 +22,10 @@ onMounted(() => {
 <template>
   <main>
     <NavbarComponent/>
-    <!-- <RouterLink></RouterLink> -->
-    <button>back</button>
+    <RouterLink to="/">
+        <button>back</button>
+    </RouterLink>
+   
     
     <div class="countryInfo">
       <img :src="countryStore.countryDetails[0]?.flags.png" :alt="countryStore.countryDetails[0]?.name.common" class="flag">
