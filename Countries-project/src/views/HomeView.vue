@@ -30,7 +30,7 @@ onMounted(() => {
           <option value="America">America</option>
           <option value="Asia">Asia</option>
           <option value="Europe">Europe</option>
-          <option value="Oceania">0ceania</option>
+          <option value="Oceania">Oceania</option>
         </select>
         </div>
         
@@ -43,6 +43,7 @@ onMounted(() => {
             <h3>{{ country.name.common }}</h3>
             <p><strong>Population:</strong> {{ country.population }}</p>
             <p><strong>Region:</strong> {{ country.region?.common }}</p>
+            <p><strong>Subregion</strong>{{ country.subregion }}</p>
             <p><strong>Capital:</strong> {{ country.capital?.[0] }}</p>
           </div>
           
